@@ -12,7 +12,7 @@ class LessonList extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Lesson> allLessons = DataHelper.allAddedLessons;
 
-    return allLessons.length > 0
+    return allLessons.isNotEmpty
         ? ListView.builder(
             itemBuilder: (context, index) {
               return Dismissible(
